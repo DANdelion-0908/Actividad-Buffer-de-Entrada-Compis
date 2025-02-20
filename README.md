@@ -2,7 +2,7 @@
  
 #### Participantes
 - Eunice Mata - 21231
-- Hector Penedo - 22217
+- Héctor Penedo - 22217
 
 ## Explicación
 ### ¿Qué hace el programa?
