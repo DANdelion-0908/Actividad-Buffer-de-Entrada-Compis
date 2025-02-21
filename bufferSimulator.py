@@ -1,9 +1,11 @@
+# función que "trocea" a la entrada dependiendo del número de iteraciones
 def cargar_buffer(entrada, inicio, tamano_buffer):
     buffer = entrada[inicio:inicio + tamano_buffer]
     if len(buffer) < tamano_buffer:
         buffer.append("eof")
     return buffer
 
+# función que procesa los caracteres dentro del buffer
 def procesar_buffer(entrada, tamano_buffer = 10, inicio = 0, avance = 0, lexema = ""):
     buffer = cargar_buffer(entrada, inicio, tamano_buffer)
     
@@ -28,6 +30,6 @@ def procesar_buffer(entrada, tamano_buffer = 10, inicio = 0, avance = 0, lexema 
         buffer = cargar_buffer(entrada, inicio, tamano_buffer)
 
 
-entrada = list("Esto es un ejemplo de entrada con eof")
+entrada = list("Esto es un nuevo ejemplo")
 procesar_buffer(entrada)
 
